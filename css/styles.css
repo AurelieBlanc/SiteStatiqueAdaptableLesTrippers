@@ -2,52 +2,64 @@ body {
     font-size: 20px; 
     box-sizing: border-box; 
     font-family:'Alumni Sans Pinstripe', sans-serif;
-    width: 100%; 
     
 }
 
+
 h1 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 4rem; 
-    width: 70%; 
+    font-size: 5rem; 
+    /* width: 70%;  */
+    height: 300px; 
     margin: auto; 
     text-align: center;
-    margin-bottom: 1.5rem; 
+    margin-bottom: 2.8rem; 
     margin-top: 1rem; 
+    background-image: url("../images/originalmages/lakeDolo.jpg"); 
+    background-position: top;  
+    background-repeat : no-repeat; 
+    background-size: cover; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+   
     
 }
 
 h2 {
     font-family: 'Bebas Neue', sans-serif;; 
-    font-size: 2rem; 
+    font-size: 2.8rem; 
     text-align: center; 
     width: 90%; 
     margin: auto; 
     margin-bottom: 2.8rem; 
 }
 
-.les_dolomites_h3 {
-    text-align: center; 
-    font-weight: bolder;
-    font-size: 1.5rem; 
-    width: 90%; 
+h3 { 
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.7rem; 
+    width: 80%; 
     margin: auto; 
-    margin-bottom: 2rem; 
+    margin-bottom: 2.8rem; 
+    text-align: center; 
 }
+
 
 .les_dolomites_article {
     width: 90%; 
     margin: auto; 
     text-align:center; 
+    font-weight: bolder; 
+    margin-bottom: 2.8rem; 
 }
 
 .les_dolomites_article_h4 {
-    font-weight: bolder; 
+    font-family: 'Bebas Neue', sans-serif;
     margin-bottom: 1rem; 
 }
 
 .les_dolomites_article_p {
-    margin-bottom: 2rem; 
+    margin-bottom: 2.8rem; 
 }
 
 img {
@@ -56,9 +68,15 @@ img {
    
 }
 
-.les_dolomites_photos {
+.les_dolomites_photos_h4 {
+    text-align:center; 
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bolder; 
+}
+
+.container_photos {
     
-    padding-top:2rem; 
+    padding-top:.5rem; 
     width: 96%; 
     margin: auto; 
     display: flex; 
@@ -69,9 +87,113 @@ img {
 
 footer {
     height: 4rem;
+    
     text-align: center; 
-    padding-top: 2rem; 
-    background-color: #DBDEE5; 
-    margin: 0.5rem; 
+    padding-top: 3.1rem; 
+    color: white; 
+    
+    font-weight: bolder; 
+    margin-top: 2rem; 
+    background-image: url("../images/originalmages/treCimeDolo.jpg"); 
+    background-position: top; 
+}
 
+@media only screen and (min-width:800px) and (max-width: 966px){
+    
+    body {
+        background-color: black; 
+    }
+
+    h1 {
+        margin-bottom: 0; 
+    }
+
+    .les_dolomites_content {
+        width: 80%; 
+        margin: auto; 
+        background-color: white; 
+        
+    }
+
+    h2, h3 {
+        width: 60%; 
+        margin: auto; 
+        padding-top: 2.8rem; 
+        
+        text-align: center; 
+    }
+
+    .les_dolomites_article {
+        margin-top: 3rem; 
+        
+    }
+
+    .last {
+        padding-bottom:2.8rem; 
+    }
+    
+    .les_dolomites_photos_h4 {
+        color: white; 
+        
+        
+    }
+
+    .container_photos {
+        width: 80%; 
+        gap: 3rem; 
+    }
+}
+
+@media only screen and (min-width: 966px) {
+    
+body {
+    background-color: black;
+}
+
+    h1 {
+        margin-bottom: 0; 
+    }
+
+    h2, h3 {
+        width: 60%; 
+        margin: auto; 
+        
+        text-align: center; 
+        padding-top: 2.8rem; 
+    }
+
+    .les_dolomites_photos_h4 {
+        color: white;  
+    }
+
+    .les_dolomites_article {
+        margin-top: 3rem; 
+        
+    }
+
+    .les_dolomites_content {
+        width: 70%; 
+        margin: auto; 
+        background-color: white; 
+    }
+    
+    .last {
+        padding-bottom:2.8rem;  
+    }
+    .container_photos {
+        width: 70%; 
+        margin: auto; 
+        display: grid; 
+        
+        grid-template-columns: 1fr 1fr 1fr; 
+        gap: 7px; 
+        
+
+    }
+
+    .les_dolomites_photos_img {
+        width: 100%; 
+    }
+
+   
 }
